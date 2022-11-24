@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container {
+	margin: 0 0 0 0;
+	padding: 0rem 0rem 0rem 10rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.heading {
+	text-align: left;
+
+}
+
+.image {
+	width: 100%;
+	display: flex;
+ 	justify-content: center;
+ 	align-items: right;
+ 	border: none !important;
+ 	clip-path: polygon(180% 0%, 100% 47%, 100% 100%, 25% 100%, 0 64%, 25% 0%);
+ 	background: #164A41;
+ 	/*background: -webkit-linear-gradient(90deg, hsla(170, 54%, 19%, 1) 0%, hsla(121, 21%, 38%, 1) 49%, hsla(104, 35%, 67%, 1) 100%);*/
+}
+
+.image > img {
+	width: auto;
+	height: 90vh;
+	object-fit: cover;
+}
+
+.heading > h1 {
+	font-size: 45px ;
+	margin: 0 0 0 0;
+	line-height: 1;
+	font-weight: normal;
+	font-family: Yeseva One;
+	color: #164A41
+}
+
+.heading > p {
+	font-size: 18px;
+	margin: 16px 0 0 0;
+	font-family: Josefin Sans;
+}
+
+.heading > button {
+	font-size: 16px;
+	font-family: Josefin Sans;
+	padding: 12px;
+	background: #F78522;
+	border: 0px;
+	border-radius:6px;
+	color: #FFFFFF;
+	margin: 16px 0 0 0;
+	cursor: pointer;
+}
+
+.heading > button:hover {
+	background: linear-gradient(135deg, hsla(28, 93%, 55%, 1) 20%, hsla(77, 100%, 64%, 1) 100%);
+}
+
+@media (max-width: 750px) {
+	.container {
+		padding: 2.5rem 0rem 0rem 2.5rem;
+		flex-direction: column;
+	}
+
+  	.heading {
+  		padding: 0rem 0rem 0rem 0rem;
+  }
+}

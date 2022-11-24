@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container {
+	margin: 0 0 0 0;
+	padding: 0rem 5rem 5rem 10rem;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	flex-direction: column;	
+}
+
+.displaycards {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align:center;
+	gap: 2.5rem;
+}
+
+.cards {
+	width: 25%;
+	margin-top: -5rem;
+	padding: 0 1rem 1rem 1rem;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  background:#4D774E;
+}
+
+.content > h1 {
+	font-family: Yeseva One !important;
+	font-size: 25px;
+	font-weight: normal;
+	line-height:1;
+	color: #FFFFFF;
+}
+
+.content > p {
+	font-family: Josefin Sans;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.image-testremovethis:hover {
+	/*-ms-transform: scale(1.5); /* IE 9 */
+	/*-webkit-transform: scale(1.5); /* Safari 3-8 */
+	/*transform: scale(1.5); */
+}
+
+.image {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /*transition: transform .5s;*/
+}
+
+.image > img {
+	height: 30vh;
+	margin-top: -8rem;
+}
+
+@media (max-width: 1150px) {
+	.container {
+		padding: 0 2.5rem 2.5rem 2.5rem;
+	}
+
+	.title {
+		text-align: left;
+	}
+  .displaycards {
+  	flex-direction: column;
+  }
+  .cards {
+  	width: 100%;
+  	margin-top: 5rem;
+  }
+}

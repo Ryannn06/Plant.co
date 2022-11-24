@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container {
+	margin: 0 0 0 0;
+	padding: 5rem 10rem 5rem 10rem;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.card {
+	width: 40%;
+	height: auto;
+	padding: 5rem;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	border: 2px solid #164A41;
+}
+
+.card_bottom {
+	width: 80%;
+	height: auto;
+	padding: 5rem;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	border: 2px solid #164A41;
+}
+
+
+.content {
+	text-align: left;
+}
+
+.content > h1 {
+	font-family: Yeseva One;
+	font-size: 45px;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.content > p {
+	font-family: Josefin Sans;
+	font-size: 18px;
+}
+
+.content > button {
+	font-size: 16px;
+	font-family: Josefin Sans;
+	padding: 12px;
+	background-color: darkorange;
+	border: 0px;
+	border-radius:6px;
+	color: white;
+	margin: 16px 0 0 0;
+	cursor: pointer;
+}
+
+@media (max-width: 750px) {
+	.container {
+		padding: 2.5rem 0rem 0rem 2.5rem;
+		flex-direction: column;
+	}
+
+  	.heading {
+  		padding: 0rem 0rem 0rem 0rem;
+  }
+}

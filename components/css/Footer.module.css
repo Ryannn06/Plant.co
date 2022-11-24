@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container {
+	margin: 0 0 0 0;
+	padding: 2rem 5rem 2rem 5rem;	
+	display: flex;
+	justify-content:space-between;
+	flex-direction: column;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background: #164A41;
+}
+
+.brand {
+	display: flex;
+}
+
+.brand > a {
+	font-size: 45px;
+	font-family: Yeseva One;
+	color: #FFFFFF;
+}
+
+.navlink {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	color: #FFFFFF;
+}
+
+.navlink > P {
+	font-size: 18px;
+	font-family: Josefin Sans;
+	margin-bottom: 5px;
+}
+
+.navlink > a:hover {
+	text-decoration: underline;
+}
+
+.navlink > a {
+	font-size: 18px;
+	font-family: Josefin Sans;
+}
