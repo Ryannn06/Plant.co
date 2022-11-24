@@ -3,42 +3,60 @@
 
 .container {
 	margin: 0 0 0 0;
-	padding: 0rem 10rem 0rem 10rem;
-	text-align: center;
+	display: flex;
+}
+
+.first_section {
+	margin: 0 0 0 0;
+	padding: 5rem 10rem 5rem 10rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 40vh;
+	height: auto;
+	width:60%;
 	background: #164A41;
 }
 
-.heading {
-	text-align: center;
-}
-
-.heading > h1 {
-	font-size: 45px ;
-	margin: 0 0 0 0;
-	line-height: 1;
-	font-weight: normal;
-	font-family: Yeseva One;
-	color: #FFFFFF;
-}
-
-.heading > p {
+.content > p {
 	font-size: 18px;
-	margin: 16px 0 0 0;
+	color: white;
+	margin: 16px 0 16px 0;
 	font-family: Josefin Sans;
-	color: #FFFFFF;
 }
 
-@media (max-width: 750px) {
-	.container {
-		padding: 2.5rem 0rem 0rem 2.5rem;
-		flex-direction: column;
-	}
+.content > h1 {
+	font-size: 35px;
+	color: white !important;
+	margin: 16px 0 0 0;
+	font-family: Yeseva One;
+	font-weight: normal;
+	color: darkorange;	
+}
 
-  	.heading {
-  		padding: 0rem 0rem 0rem 0rem;
+.image {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-image: url('/images/quirky.png')
+}
+
+
+@media (max-width: 1150px) {
+  .first_section {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .first_section {
+  	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  	flex-direction: column-reverse;
+  }
+
+  .image > img {
+  	margin-top: 0rem;
+  	width: 100%;
   }
 }

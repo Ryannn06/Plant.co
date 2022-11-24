@@ -3,6 +3,8 @@ import styles from '/components/css/About/AboutWelcome.module.css';
 const Welcome = () => {
 	return(
 		<div className={styles.container}>
+			<div className={styles.image}>
+			</div>
 			<div className = {styles.first_section}>
 				<div className={styles.content}>
 					<p>What we do here?</p>
@@ -14,8 +16,6 @@ const Welcome = () => {
 					</p>
 				</div>				
 			</div>
-			<div className={styles.image}>
-			</div>	
 		</div>
 	);
 };
