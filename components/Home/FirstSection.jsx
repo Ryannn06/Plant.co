@@ -5,13 +5,14 @@ const FirstSection = () => {
 		<div className={styles.container}>
 			<div className = {styles.first_section}>
 				<div className={styles.image}>
-					<img src="/images/jadevine.svg" alt="" />
+					<img src="/images/plantdecor3.jpg" alt="" />
 				</div>	
 				<div className={styles.content}>
 					<h6>What do we do?</h6>
 					<h1>We organize plants for you</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>We love to greenify the environment and so is your home. The Plant.co
+					would love to be part of your planting experience. Check our best yet cost-effective
+					services here.</p>
 					<button>Learn the services &raquo;</button>
 				</div>				
 			</div>

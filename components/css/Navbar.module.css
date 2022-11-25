@@ -20,6 +20,10 @@
 	color: #164A41;
 }
 
+.brand > img {
+	height:45px;
+}
+
 .navlink {
 	display: flex;
 	gap: 60px;

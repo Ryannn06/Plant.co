@@ -15,15 +15,20 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
       <div>
-        <Navbar />
-        <Heading />
-        <Qoute />
-        <Cards />
-        <Qoute2 />
-        <FirstSection />
-        <BeforeFooter />
-        <SecondSection />
-        <Footer />
+        <Head>
+          <title>Plant.co</title>
+        </Head>
+        <div>
+          <Navbar />
+          <Heading />
+          <Qoute />
+          <Cards />
+          <Qoute2 />
+          <FirstSection />
+          <BeforeFooter />
+          <SecondSection />
+          <Footer />
+        </div>
       </div>
 
   )

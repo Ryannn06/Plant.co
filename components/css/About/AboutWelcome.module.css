@@ -39,7 +39,9 @@
   justify-content: center;
   align-items: center;
   width: 40%;
-  background-image: url('/images/quirky.png')
+  background-image: url('/images/plantdecor.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 

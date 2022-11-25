@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container {
+	margin: 0 0 0 0;
+	padding: 0rem 10rem 5rem 10rem;
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+	margin: 0 0 0 0;
+	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+	display: flex;
+	flex-direction: column;
+	gap:1rem;
+	justify-content: left;
+	align-items: left;
+	height: auto;
+	background: #4D774E;
+	color: #FFFFFF;
+}
+
+.form > p, .form > input, .form > textarea, .name > input {
+	font-family: Josefin Sans;
+	font-size: 18px;
+}
+
+.form > input, .name > input {
+	height: 5vh;
+}
+
+.form > textarea {
+	height:50vh;
+}
+
+.form > input:hover, .name > input:hover, .form > textarea:hover {
+	border: 1px solid black ;
+}
+
+.name {
+	display: flex;
+	justify-content: left;
+	gap: 1rem;
+}
+
+.name > input {
+	width: 100%
+}
+
+.submit {
+	text-align: center;
+}
+
+.submit > a {
+	font-size: 16px;
+	font-family: Josefin Sans;
+	padding: 12px;
+	background: #F78522;
+	border: 0px;
+	border-radius:6px;
+	color: #FFFFFF;
+	margin: 16px 0 0 0;
+	cursor: pointer;
+}

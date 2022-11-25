@@ -1,16 +1,18 @@
 import styles from '/components/css/Footer.module.css';
+import Link from 'next/link';
 
 const Footer = () => {
 	return(
 		<div className={styles.container}>	
 			<div className={styles.brand}>
+				<img src='/images/logowhite.png'/>
 				<a>Plant.co</a>
 			</div>	
 			<div className={styles.navlink}>
-				<a href='/'>Home |</a>
-				<a href='/AboutUs'>About |</a>
-				<a>Services |</a>
-				<a href='/Contacts'>Contacts</a>
+				<Link href='/'>Home</Link>			
+				<Link href='/AboutUs'>About</Link>			
+				<Link href='/Service'>Services</Link>			
+				<Link href='/Contacts'>Contacts</Link>	
 			</div>	
 		</div>
 	);

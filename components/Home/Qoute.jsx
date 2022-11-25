@@ -5,8 +5,8 @@ const Qoute = () => {
 		<div className={styles.container}>
 			<div className={styles.title}>
 				<h1>Start your plants off right</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Ben and Penny Hewitt, the authors of The Nourishing Homestead, have developed
+				a three-step process which starts with the following procedures.</p>
 			</div>
 		</div>
 	);

@@ -5,8 +5,8 @@ const Developer = () => {
 		<div className={styles.container}>
 			<div className={styles.title}>
 				<hr></hr>
-				<h1>We are Developers of Plant.co</h1>
-				<p>We are the teams of Plant.co</p>
+				<h1>The Developers</h1>
+				<p>We are glad to meet you</p>
 			</div>
 			<div className={styles.displaycards}>
 				<div className={styles.cards}>

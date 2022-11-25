@@ -23,11 +23,15 @@
 	color: #FFFFFF;
 }
 
+.brand > img {
+	height:45px;
+}
+
 .navlink {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 5px;
+	gap: 2rem;
 	color: #FFFFFF;
 }
 

@@ -3,15 +3,22 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ContactHeading from '../components/Contacts/ContactHeading';
-import TopSection from '../components/Contacts/TopSection';
+import ContactNo from '../components/Contacts/ContactNo';
+import Message from '../components/Contacts/Message';
 
 export default function Contacts () {
 	return (
 		<div>
-			<Navbar />
-			<ContactHeading />
-			<TopSection />
-			<Footer />
+			<Head>
+				<title>Plant.co</title>
+			</Head>
+			<div>
+				<Navbar />
+				<ContactHeading />
+				<ContactNo />
+				<Message />
+				<Footer />
+			</div>
 		</div>
 	)
 }

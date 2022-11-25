@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container {
+	margin: 0 0 0 0;
+	padding: 5rem 10rem 5rem 10rem;
+	display: flex;
+	justify-content: center;
+}
+
+.first_section {
+	margin: 0 0 0 0;
+	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width:70%;
+	border: 1px solid;
+}
+
+.content > p {
+	font-size: 18px;
+	margin: 16px 0 16px 0;
+	font-family: Josefin Sans;
+}
+
+.content > h1 {
+	font-size: 35px;
+	margin: 16px 0 0 0;
+	font-family: Yeseva One;
+	font-weight: normal;
+}
+
+.image {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-image: url('/images/plantdecor5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 1150px) {
+  .first_section {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .first_section {
+  	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  	flex-direction: column-reverse;
+  }
+
+  .image > img {
+  	margin-top: 0rem;
+  	width: 100%;
+  }
+}

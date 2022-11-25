@@ -1,16 +1,18 @@
 import styles from './css/Navbar.module.css';
+import Link from 'next/link';
 
 const Navbar = () => {
 	return(
 		<div className={styles.container}>
 			<div className={styles.brand}>
+				<img src="/images/logo.png" />
 				<a>Plant.co</a>
 			</div>
 			<div className={styles.navlink}> 
-				<a href='/'>Home</a>			
-				<a href='/AboutUs'>About</a>			
-				<a>Services</a>			
-				<a href='/Contacts'>Contacts</a>	
+				<Link href='/'>Home</Link>			
+				<Link href='/AboutUs'>About</Link>			
+				<Link href='/Service'>Services</Link>			
+				<Link href='/Contacts'>Contacts</Link>	
 			</div>
 			<div className={styles.ctalink}>
 				<img src="/images/hamburger.png" />
@@ -19,10 +21,10 @@ const Navbar = () => {
 			<div className={styles.overlay}>
 			    <a className="close">&times;</a>
 			    <div className={styles.overlaylink}>
-				    <a>Home</a>			
-				    <a>About</a>			
-				    <a>Services</a>			
-				    <a>Contacts</a>	
+				    <Link href='/'>Home</Link>			
+				    <Link href='/AboutUs'>About</Link>			
+				    <Link href='/Service'>Services</Link>			
+				    <Link href='/Contacts'>Contacts</Link>	
 			    </div>
 			</div>				
 		</div>

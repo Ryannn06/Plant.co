@@ -5,9 +5,8 @@ const Heading = () => {
 		<div className={styles.container}>
 			<div className={styles.heading}>
 				<h1>We love helping greenify your home</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<button>Apply Now &raquo;</button>
+				<p>From improving your homeplant decorations to maintenance and repair-- we got your back!</p>
+				<button>Get started &raquo;</button>
 			</div>
 			<div className={styles.image}>
 				<img src='/images/plants.svg' />
