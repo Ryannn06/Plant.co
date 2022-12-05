@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 .container {
 	margin: 0 0 0 0;
@@ -16,14 +17,15 @@
 }
 
 .title > h1 {
-	font-family: Yeseva One;
+	font-family: Montserrat;
+	line-height: 1;
 	font-size: 35px;
 	font-weight: normal;
 	color: #164A41;
 }
 
 .title > p {
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	font-size: 18px;
 }
 
@@ -38,27 +40,27 @@
 
 .cards {
 	width: 45%;
+	height: 90vh;
 	padding: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #4D774E;
 	border-radius: 25% 0 25% 0;
 }
 
 .content > h1 {
-	font-family: Yeseva One !important;
-	font-size: 35px;
-	margin: 2.5rem 0 0 0;
+	font-family: Montserrat;
+	font-size: 25px;
 	font-weight: normal;
-	color: #FFFFFF;
 }
 
 .content > p {
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	font-size: 18px;
-	color: #FFFFFF;
+	text-indent:40px;
+	font-weight: normal;
+	text-align: justify;
 }
 
 .image-testremovethis:hover {
@@ -77,6 +79,8 @@
 }
 
 .image > img {
+	height: 50vh;
+	width: 60vh;
 	border-radius: 25% 0 25% 0;
 }
 
@@ -88,7 +92,7 @@
 
 .social > button {
 	font-size: 16px;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	padding: 12px;
 	background-color: darkorange;
 	border: 0px;

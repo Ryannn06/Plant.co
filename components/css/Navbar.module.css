@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .container {
 	margin: 0 0 0 0;
@@ -31,14 +32,17 @@
 }
 
 .navlink > a:hover {
-	text-decoration: underline;
+	color: #FFFFFF;
+	background: #ED820E;
+	padding: 10px;
 }
 
 .navlink > a {
 	font-size: 18px;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	cursor: pointer;
 	font-weight: 650px;
+	transition: .5s;
 }
 
 .ctalink {
@@ -62,16 +66,48 @@
   transition: all 0.5s ease 0s;
 }
 
+.overlay--active {
+  width: 100%;
+}
 
-@media (max-width: 750px) {
-	.navlink {
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+@media (max-width: 1150px) {
+/*	.navlink {
 		display: none
 	}
 	.ctalink {
 		display:initial;
-	}
+	} */
 	.container {
 		padding: 1rem 2.5rem 1rem 2.5rem;
+		flex-direction: column;
 	}
 
 }
+

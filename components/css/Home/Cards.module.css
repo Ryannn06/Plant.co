@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .container {
 	margin: 0 0 0 0;
@@ -27,20 +27,20 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  background:#4D774E;
+  background:#ED820E;
 }
 
 .content > h1 {
-	font-family: Yeseva One !important;
+	font-family: Montserrat;
 	font-size: 25px;
-	font-weight: normal;
 	line-height:1;
 	color: #FFFFFF;
+	font-weight: normal;
 }
 
 .content > p {
-	font-family: Josefin Sans;
-	font-size: 18px;
+	font-size: 16px;
+	font-family: Roboto;
 	color: #FFFFFF;
 }
 

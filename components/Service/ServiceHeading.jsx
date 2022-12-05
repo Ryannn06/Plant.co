@@ -7,10 +7,11 @@ const ServiceHeading= () => {
 			</div>
 			<div className = {styles.first_section}>
 				<div className={styles.content}>
-					<p>Welcome to Plant.co</p>
+					<h6>Welcome to Plant.co</h6>
 					<h1>Our Features & Services</h1>
-					<p>If you have further question or need some assitance, you may
-					contact us with the following means below.
+					<p>Our company is dedicated to offer you a 
+					great experience to your plant decoration. 
+					Below are the composition of our services.
 					</p>
 				</div>				
 			</div>		

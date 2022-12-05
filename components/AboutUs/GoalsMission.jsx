@@ -12,7 +12,7 @@ const GoalsMission = () => {
 			<div className={styles.goals}>
 				<div className = {styles.first_section}>	
 					<div className={styles.content}>
-						<p>Plant.co</p>
+						<h6>Plant.co</h6>
 						<h1>Our Goals and Mission</h1>
 						<p>Our goal and mission are to help the people in plant decorations have
 						the best experince in their journey -- serving the best yet affordable services.

@@ -1,5 +1,6 @@
 import styles from './css/Navbar.module.css';
 import Link from 'next/link';
+import Script from 'next/script';
 
 const Navbar = () => {
 	return(
@@ -19,14 +20,14 @@ const Navbar = () => {
 			</div>
 
 			<div className={styles.overlay}>
-			    <a className="close">&times;</a>
+			    <a className={styles.close}>&times;</a>
 			    <div className={styles.overlaylink}>
 				    <Link href='/'>Home</Link>			
 				    <Link href='/AboutUs'>About</Link>			
 				    <Link href='/Service'>Services</Link>			
 				    <Link href='/Contacts'>Contacts</Link>	
 			    </div>
-			</div>				
+			</div>			
 		</div>
 	);
 };

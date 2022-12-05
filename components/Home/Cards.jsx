@@ -10,8 +10,8 @@ const Cards = () => {
 					</div>
 					<div className={styles.content}>
 						<h1 variant="first">Inoculate</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>It is the process of coating the 
+						seed with the bacteria that allow it to “fix” nitrogen in the soil.</p>
 					</div>
 				</div>			
 
@@ -21,8 +21,8 @@ const Cards = () => {
 					</div>
 					<div className={styles.content}>
 						<h1 variant="second">Sow your seeds</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>It is fine to start from scract but sowing your seeds into high quality 
+						potting soil is our main goal.</p>
 					</div>
 				</div>			
 				<div className={styles.cards}>
@@ -31,8 +31,8 @@ const Cards = () => {
 					</div>
 					<div className={styles.content}>
 						<h1 variant="third">Punt the pots</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p>One of the best investment is the soil blocker in 
+						which scompresses loose potting soil into tight seedling blocks.</p>
 					</div>
 				</div>
 			</div>

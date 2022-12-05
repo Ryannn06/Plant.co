@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .container {
 	margin: 0 0 0 0;
@@ -22,7 +22,7 @@
 }
 
 .form > p, .form > input, .form > textarea, .name > input {
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	font-size: 18px;
 }
 
@@ -52,9 +52,9 @@
 	text-align: center;
 }
 
-.submit > a {
+.submit > button {
 	font-size: 16px;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	padding: 12px;
 	background: #F78522;
 	border: 0px;
@@ -63,3 +63,16 @@
 	margin: 16px 0 0 0;
 	cursor: pointer;
 }
+
+@media (max-width: 1150px) {
+	.container {
+		padding: 0rem 2.5rem 2.5rem 2.5rem;
+		flex-direction: column;
+	}
+
+  	.heading {
+  		padding: 0rem 0rem 0rem 0rem;
+  }
+}
+
+

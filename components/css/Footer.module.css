@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .container {
 	margin: 0 0 0 0;
-	padding: 2rem 5rem 2rem 5rem;	
+	padding: 5rem 5rem 5rem 5rem;	
 	display: flex;
 	justify-content:space-between;
 	flex-direction: column;
@@ -37,7 +38,7 @@
 
 .navlink > P {
 	font-size: 18px;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	margin-bottom: 5px;
 }
 
@@ -47,5 +48,5 @@
 
 .navlink > a {
 	font-size: 18px;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 }

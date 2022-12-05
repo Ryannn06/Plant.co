@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '/components/css/Home/Sections.module.css';
 
 const FirstSection = () => {
@@ -13,7 +14,7 @@ const FirstSection = () => {
 					<p>We love to greenify the environment and so is your home. The Plant.co
 					would love to be part of your planting experience. Check our best yet cost-effective
 					services here.</p>
-					<button>Learn the services &raquo;</button>
+					<button><Link href="/Service">Learn the services &raquo;</Link></button>
 				</div>				
 			</div>
 		</div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '/components/css/Home/Heading.module.css';
 
 const Heading = () => {
@@ -6,7 +7,9 @@ const Heading = () => {
 			<div className={styles.heading}>
 				<h1>We love helping greenify your home</h1>
 				<p>From improving your homeplant decorations to maintenance and repair-- we got your back!</p>
-				<button>Get started &raquo;</button>
+				<button>
+					<Link href="/Service">Get started &raquo;</Link>
+				</button>
 			</div>
 			<div className={styles.image}>
 				<img src='/images/plants.svg' />

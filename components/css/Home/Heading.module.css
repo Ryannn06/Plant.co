@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .container {
 	margin: 0 0 0 0;
@@ -37,20 +37,19 @@
 	font-size: 45px ;
 	margin: 0 0 0 0;
 	line-height: 1;
+	color: #164A41;
 	font-weight: normal;
-	font-family: Yeseva One;
-	color: #164A41
+	font-family: Montserrat;
 }
 
 .heading > p {
 	font-size: 18px;
 	margin: 16px 0 0 0;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 }
 
 .heading > button {
 	font-size: 16px;
-	font-family: Josefin Sans;
 	padding: 12px;
 	background: #F78522;
 	border: 0px;
@@ -58,13 +57,14 @@
 	color: #FFFFFF;
 	margin: 16px 0 0 0;
 	cursor: pointer;
+	font-family: Roboto;
 }
 
 .heading > button:hover {
 	background: linear-gradient(135deg, hsla(28, 93%, 55%, 1) 20%, hsla(77, 100%, 64%, 1) 100%);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1150px) {
 	.container {
 		padding: 2.5rem 0rem 0rem 2.5rem;
 		flex-direction: column;

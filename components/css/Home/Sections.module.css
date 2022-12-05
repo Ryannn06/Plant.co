@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .container {
 	margin: 0 0 0 0;
 	background: #164A41;
 }
 
-.first_section, .second_section {
+.first_section {
 	margin: 0 0 0 0;
 	padding: 5rem 10rem 5rem 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+	height: auto;
+}
+
+.second_section {
+	margin: 0 0 0 0;
+	padding: 5rem 10rem 0rem 10rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,21 +32,21 @@
 	margin: 16px 0 0 0;
 	line-height: 1;
 	font-weight: normal;
-	font-family: Yeseva One;
+	font-family: Montserrat;
 }
 
 .content > p {
 	font-size: 18px;
 	color: white;
 	margin: 16px 0 16px 0;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 }
 
 .content > h6 {
 	font-size: 18px;
 	color: white !important;
 	margin: 16px 0 0 0;
-	font-family: Josefin Sans;
+	font-family: Montserrat;
 	font-weight: normal;
 	color: darkorange;	
 }
@@ -68,12 +78,12 @@
 .image > p {
 	font-size: 14px;
 	color: white;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 }
 
 .content > button {
 	font-size: 16px;
-	font-family: Josefin Sans;
+	font-family: Roboto;
 	padding: 12px;
 	background: #F78522;
 	border: 0px;
@@ -87,7 +97,7 @@
 	background: linear-gradient(135deg, hsla(28, 93%, 55%, 1) 20%, hsla(77, 100%, 64%, 1) 100%);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1350px) {
   .first_section {
     width: 100%;
     flex-direction: column;

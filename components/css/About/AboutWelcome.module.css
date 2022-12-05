@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .container {
 	margin: 0 0 0 0;
@@ -17,18 +17,26 @@
 	background: #164A41;
 }
 
-.content > p {
+.content > p{
 	font-size: 18px;
 	color: white;
 	margin: 16px 0 16px 0;
-	font-family: Josefin Sans;
+	font-family: Roboto;
+}
+
+.content > h6 {
+	font-size: 18px;
+	color: white;
+	margin: 16px 0 16px 0;
+	font-family: Roboto;
 }
 
 .content > h1 {
 	font-size: 35px;
+	line-height: 1;
 	color: white !important;
 	margin: 16px 0 0 0;
-	font-family: Yeseva One;
+	font-family: Montserrat;
 	font-weight: normal;
 	color: darkorange;	
 }
@@ -39,7 +47,7 @@
   justify-content: center;
   align-items: center;
   width: 40%;
-  background-image: url('/images/plantdecor.jpg');
+  background-image: url('/images/flowers.svg');
   background-position: center;
   background-size: cover;
 }
@@ -47,14 +55,8 @@
 
 @media (max-width: 1150px) {
   .first_section {
-    width: 100%;
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .first_section {
   	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-  	flex-direction: column-reverse;
+  	text-align: left;
   }
 
   .image > img {
