@@ -7,7 +7,7 @@ const Welcome = () => {
 			</div>
 			<div className = {styles.first_section}>
 				<div className={styles.content}>
-					<p>About Us</p>
+					<h6>About Us</h6>
 					<h1>A website for plant decoration</h1>
 					<p>This is a static website for offering plant decoration services to 
 					plant-lover people. We assure you get the best and planty experience with

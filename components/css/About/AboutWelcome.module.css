@@ -28,7 +28,8 @@
 	font-size: 18px;
 	color: white;
 	margin: 16px 0 16px 0;
-	font-family: Roboto;
+	font-family: Montserrat;
+	font-weight: normal;
 }
 
 .content > h1 {
@@ -38,7 +39,6 @@
 	margin: 16px 0 0 0;
 	font-family: Montserrat;
 	font-weight: normal;
-	color: darkorange;	
 }
 
 .image {
