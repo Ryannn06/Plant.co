@@ -6,8 +6,9 @@ const Qoute2 = () => {
 			<div className={styles.title}>
 				<hr></hr>
 				<h6>A simple qoute for you</h6>
-				<h1>A beatiful plant is like having a friend around the house</h1>
-				<p><i>Beth Ditto</i></p>
+				<h1>The secret of improved plant breeding, apart from scientific knowledge
+				is love.</h1>
+				<p><i>Luther Burbank</i></p>
 				<hr></hr>
 			</div>
 		</div>

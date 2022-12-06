@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+	margin: 0 0 0 0;
+	background: #164A41;
+}
+
+.first_section {
+	margin: 0 0 0 0;
+	padding: 5rem 10rem 5rem 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+.content {
+	text-align: center;
+	width: 60%;
+
+}
+
+.content > h1 {
+	font-size: 35px ;
+	color: white;
+	margin: 16px 0 0 0;
+	line-height: 1;
+	font-weight: normal;
+	font-family: Montserrat;
+}
+
+.content > p {
+	font-size: 18px;
+	color: white;
+	margin: 16px 0 16px 0;
+	font-family: Roboto;
+}
+
+.content > h6 {
+	font-size: 18px;
+	color: white;
+	margin: 16px 0 0 0;
+	font-family: Roboto;
+	font-weight: normal;
+}
+
+.content > button {
+	font-size: 16px;
+	font-family: Roboto;
+	padding: 12px;
+	background: #F78522;
+	border: 0px;
+	border-radius:6px;
+	color: #FFFFFF;
+	margin: 16px 0 0 0;
+	cursor: pointer;
+}
+
+.content > button:hover {
+	background: linear-gradient(135deg, hsla(28, 93%, 55%, 1) 20%, hsla(77, 100%, 64%, 1) 100%);
+}
+
+@media (max-width: 1150px) {
+  .first_section {
+    flex-direction: column;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .content {
+  	width: 100%;
+  }
+}

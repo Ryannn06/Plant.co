@@ -7,7 +7,6 @@ const GoalsMission = () => {
 				<hr></hr>
 				<h1>Our Goals and Mission</h1>
 				<p>We are delightful to be part of your planting experience</p>
-				<hr></hr>
 			</div>
 			<div className={styles.goals}>
 				<div className = {styles.first_section}>	

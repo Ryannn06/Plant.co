@@ -3,7 +3,7 @@
 
 .container {
 	margin: 0 0 0 0;
-	padding: 0rem 10rem 0rem 10rem;
+	padding: 5rem 10rem 5rem 10rem;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -11,12 +11,16 @@
 }
 
 .beforefooting {
-	padding: 0 10rem 0 10rem;
 	min-height: 60vh;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	background-image: url('/images/outdoor.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: .5s;
 
 }
 
@@ -50,11 +54,12 @@
 	background: linear-gradient(135deg, hsla(28, 93%, 55%, 1) 20%, hsla(77, 100%, 64%, 1) 100%);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1150px) {
 	.container {
-		padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+		padding: 2.5rem 0rem 2.5rem 0rem;
 	}
-  .beforefooting {
-  	padding: 0rem 0rem 0rem 0rem;
-  }
+	.beforefooting {
+		align-items: center;
+		
+	}
 }

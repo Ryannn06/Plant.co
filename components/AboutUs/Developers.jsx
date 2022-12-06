@@ -5,81 +5,40 @@ const Developer = () => {
 		<div className={styles.container}>
 			<div className={styles.title}>
 				<hr></hr>
-				<p>We are glad to meet you</p>
-				<h1>The Developers</h1>
+				<p>Hello, we are glad to meet you here!</p>
+				<h1>Who We Are</h1>
 			</div>
 			<div className={styles.displaycards}>
-				<div className={styles.cards}>
+
+				<div className={styles.cardimage}>
 					<div className={styles.image}>
-						<img src="/images/people.jpg" alt="" />
-					</div>
-					<div className={styles.content}>
-						<h1 variant="first">Ryan Angelo Dela Cruz</h1>
-						<p>Hello! I am the main developer of this project. This our first nextjs
-						static website so please enjoy and thanks for visiting.</p>
-						<div className={styles.social}>
-							<button>Gmail</button>
-							<button>Github</button>
-						</div>
+						<img src="/images/welcome.svg" alt="" />
 					</div>
 				</div>			
 
-				<div className={styles.cards}>
-					<div className={styles.image}>
-						<img src="/images/consult.jpg" alt="" />
-					</div>
+				<div className={styles.cardtext}>
 					<div className={styles.content}>
-						<h1 variant="third">Crisanto Areglado</h1>
-						<p>Hello, I am one of the members of the group. It is a pleasure for
-						your visit. Please feel welcome as you navigate website.</p>
-						<div className={styles.social}>
-							<button>Gmail</button>
-							<button>Github</button>
-						</div>
+						<h1 variant="third">We Are The Code Robots</h1>
+						<p>Hi, we are students composed of five
+						members in the team-- Ryan, Areglado, Tiagan, 
+						Mislos and Ituralde. We like programming as much as we care for the environment.</p>
 					</div>
 				</div>
-				<div className={styles.cards}>
-					<div className={styles.image}>
-						<img src="/images/consult.jpg" alt="" />
-					</div>
-					<div className={styles.content}>
-						<h1 variant="third">Dante Tiagan</h1>
-						<p>Hi, it is glad to meet you. We hope you find our services ideal
-						to your needs. We are looking forward to serve you.</p>
-						<div className={styles.social}>
-							<button>Gmail</button>
-							<button>Github</button>
-						</div>
+
+				<div className={styles.cardtext_2}>
+					<div className={styles.content_1}>
+						<h1 variant="third">For The Environment</h1>
+						<p>This is our first static website about plant decoration in Nextjs. We believe
+						that this way we can express our interest in nature and the environment.</p>
 					</div>
 				</div>
-				<div className={styles.cards}>
+
+				<div className={styles.cardimage_2}>
 					<div className={styles.image}>
-						<img src="/images/consult.jpg" alt="" />
+						<img src="/images/nature.svg" alt="" />
 					</div>
-					<div className={styles.content}>
-						<h1 variant="third">Genesis Mislos</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<div className={styles.social}>
-							<button>Gmail</button>
-							<button>Github</button>
-						</div>
-					</div>
-				</div>
-				<div className={styles.cards}>
-					<div className={styles.image}>
-						<img src="/images/consult.jpg" alt="" />
-					</div>
-					<div className={styles.content}>
-						<h1 variant="third">Jheremy Ituralde</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<div className={styles.social}>
-							<button>Gmail</button>
-							<button>Github</button>
-						</div>
-					</div>
-				</div>
+				</div>	
+
 			</div>
 		</div>
 	);

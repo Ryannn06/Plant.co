@@ -13,7 +13,6 @@
 
 .title {
 	text-align: center;
-	padding-bottom: 5rem;
 }
 
 .title > h1 {
@@ -32,35 +31,59 @@
 .displaycards {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+	gap: 1rem;
 	flex-wrap: wrap;
 	text-align:center;
-	gap: 5rem;
 }
 
-.cards {
+.cardimage, .cardtext, .cardimage_2, .cardtext_2 {
 	width: 45%;
-	height: 90vh;
-	padding: 2.5rem;
+	min-height: 50vh;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border-radius: 25% 0 25% 0;
 }
 
-.content > h1 {
+.cardimage {
+}
+
+.cardimage_2 {
+	border-radius: 50%;
+}
+
+.cardtext, .cardtext_2 {
+	padding:1rem;
+}
+
+.cardtext {
+	border-radius: 50% 25% 75% 0;
+	text-align: left;
+	background: #F2F2F2;
+}
+
+.cardtext_2 {
+	border-radius: 75% 0% 50% 25%;
+	text-align: left;
+	background: #F1B24A;
+	color: #FFFFFF;
+}
+
+
+.content_1 {
+	text-align: right;
+}
+
+.content > h1, .content_1 > h1 {
 	font-family: Montserrat;
 	font-size: 25px;
 	font-weight: normal;
 }
 
-.content > p {
+.content > p, .content_1 > p {
 	font-family: Roboto;
 	font-size: 18px;
-	text-indent:40px;
 	font-weight: normal;
-	text-align: justify;
 }
 
 .image-testremovethis:hover {
@@ -84,27 +107,15 @@
 	border-radius: 25% 0 25% 0;
 }
 
-.social {
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
-}
-
-.social > button {
-	font-size: 16px;
-	font-family: Roboto;
-	padding: 12px;
-	background-color: darkorange;
-	border: 0px;
-	border-radius:6px;
-	color: white;
-	margin: 16px 0 0 0;
-	cursor: pointer;
-}
-
 @media (max-width: 1150px) {
   .displaycards {
   	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  .cardimage, .cardtext, .cardimage_2, .cardtext_2 {
+  	width: 100%;
   }
 
   .container {
@@ -113,9 +124,5 @@
 
   .title {
   	padding-bottom:2.5rem;
-  }
-
-  .cards {
-  	width: 100%
   }
 }

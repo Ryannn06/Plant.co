@@ -3,7 +3,9 @@
 
 .container {
 	margin: 0 0 0 0;
-	background: #164A41;
+	padding: 0 0 5rem 0;
+	display: flex;
+	gap: 1rem;
 }
 
 .first_section {
@@ -12,27 +14,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2.5rem;
 	height: auto;
-}
-
-.second_section {
-	margin: 0 0 0 0;
-	padding: 5rem 10rem 0rem 10rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 2.5rem;
-	height: auto;
-}
-
-.content > h1 {
-	font-size: 35px ;
-	color: white;
-	margin: 16px 0 0 0;
-	line-height: 1;
-	font-weight: normal;
-	font-family: Montserrat;
+	width:60%;
+	background: #164A41;
 }
 
 .content > p {
@@ -44,6 +28,15 @@
 
 .content > h6 {
 	font-size: 18px;
+	font-weight: normal;
+	color: white;
+	margin: 16px 0 16px 0;
+	font-family: Montserrat;
+}
+
+.content > h1 {
+	font-size: 35px;
+	line-height: 1;
 	color: white !important;
 	margin: 16px 0 0 0;
 	font-family: Montserrat;
@@ -52,33 +45,10 @@
 }
 
 .image {
-	width:70%;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  /*transition: transform .5s;*/
-  border: 2px solid black;
-}
-
-.image > img {
-	height: 70vh;
-	width: 100%;
-	margin-top: -10rem;
-}
-
-.image > h1 {
-	font-size: 16px;
-	color: white;
-	font-family: Yeseva One;
-	font-weight:normal;
-}
-
-.image > p {
-	font-size: 14px;
-	color: white;
-	font-family: Roboto;
+  width: 40%;
+  background-image: url('/images/environment.svg');
+  background-size: cover;
+  background-position: center;
 }
 
 .content > button {
@@ -97,20 +67,18 @@
 	background: linear-gradient(135deg, hsla(28, 93%, 55%, 1) 20%, hsla(77, 100%, 64%, 1) 100%);
 }
 
-@media (max-width: 1350px) {
-  .first_section {
-    width: 100%;
-    flex-direction: column;
-    text-align: left;
-  }
 
+@media (max-width: 1150px) {
+	.container {
+		flex-direction: column;
+	}
   .first_section {
   	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-  	flex-direction: column-reverse;
+  	text-align: left;
+  	width: 100%
   }
-
-  .image > img {
-  	margin-top: 0rem;
-  	width: 100%;
+  .image {
+  	height: 60vh;
+  	width: 100%
   }
 }

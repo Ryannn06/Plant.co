@@ -11,10 +11,19 @@
 
 .title {
 	padding: 2rem;
+	background: url('/images/fetch.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 120vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
 }
 
 .title > hr {
-
+	width: 100%;
+	border: 1px solid #F1B24A;
 }
 
 .title > h6 {
@@ -38,5 +47,13 @@
 	margin:0;
 	font-family: Montserrat;
 	font-size: 18px;
-	color: #F1B24A;
+	color: #4D774E;
+}
+
+@media (max-width: 1150px) {
+	.container {
+		padding: 0rem 0rem 2.5rem 0rem;
+		flex-direction: column;
+	}
+
 }

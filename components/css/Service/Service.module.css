@@ -55,13 +55,14 @@
 	line-height: 1;
 	font-size: 35px;
 	font-weight: normal;
+	color: #F1B24A;
 }
 
 .content > p {
 	font-family: Roboto;
 	font-size: 18px;
-	text-align: justify;
-	text-indent: 40px;
+	text-align: center;
+
 }
 
 .image-testremovethis:hover {
@@ -76,22 +77,23 @@
   display: flex;
   justify-content: right;
   align-items: center;
+  border-radius: 25% 0 25% 0;
   /*transition: transform .5s;*/
 }
 
 .image > img {
 	height: 50vh;
 	width: 60vh;
-	border-radius: 25% 0 25% 0;
 }
 
 @media (max-width: 1150px) {
   .displaycards {
   	flex-direction: column;
+  	gap: 2.5rem;
   }
 
   .container {
-  	padding: 2.5rem
+  	padding: 1rem
   }
 
   .title {
