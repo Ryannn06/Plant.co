@@ -30,7 +30,6 @@ export default function Home(Component, pageProps) {
           <SecondSection />
           <Footer />
         </div>
-        <script type="text/javascript" src="/static/navbar.js"></script>
       </div>
 
   )
