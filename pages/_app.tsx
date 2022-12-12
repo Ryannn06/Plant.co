@@ -1,15 +1,14 @@
 import '../styles/globals.css'
 import { motion, AnimatePresence } from 'framer-motion';
-import { useRouter } from "next/Router";
+import { useRouter } from "next/router";
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+
+function MyApp({ Component, pageProps }: AppProps) {
     const router = useRouter();
 
     return (
-      <AnimatePresence 
-        mode="wait" 
-        initial="false"
-      >
+      <AnimatePresence >
         <motion.div
           key = { router.route }
           initial = "initialState"
