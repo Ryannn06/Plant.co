@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from "next/router";
 import { AppProps } from 'next/app';
+import { SessionProvider } from "next-auth/react"
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -23,7 +24,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           }}
           className = "base-page-size"
         >
-          <Component {...pageProps} />
+          <SessionProvider session={pageProps.session}>
+            <Component {...pageProps} />
+          </SessionProvider>
         </motion.div>
       </AnimatePresence>  
     )

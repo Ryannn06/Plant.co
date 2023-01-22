@@ -1,0 +1,93 @@
+.container {
+	margin: 0 0 0 0;
+	padding: 5rem 10rem 5rem 10rem;	
+	display: flex;
+}
+
+.leftside {
+	display: flex;
+	flex-direction: column;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.form > input {
+	font-family: Roboto;
+	font-size: 18px;
+	height: 7vh;
+	width: 400px;
+	padding: 1rem;
+}
+
+.credentials > h1 {
+	font-size: 35px ;
+	margin: 0 0 0 0;
+	line-height: 1;
+	color: #164A41;
+	font-weight: normal;
+	font-family: Montserrat;
+}
+
+.credentials > p {
+	font-family: Roboto;
+	font-size: 18px;
+}
+
+.links {
+	text-decoration: underline;
+}
+
+.providers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: Roboto;
+	font-size: 18px;
+}
+
+.providersbtn {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.providersbtn > button {
+	font-family: Roboto;
+	font-size: 16px;
+	padding: 14px;	
+	width: 400px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.texticon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
+}
+
+.texticon > img {
+	height: 4vh;
+}
+
+.submit {
+	text-align: center;
+}
+
+.submit > button {
+	font-size: 16px;
+	font-family: Roboto;
+	padding: 14px;
+	background: #F78522;
+	border: 0px;
+	border-radius:6px;
+	color: #FFFFFF;
+	cursor: pointer;
+	width: 400px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}

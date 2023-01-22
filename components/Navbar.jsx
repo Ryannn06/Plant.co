@@ -1,8 +1,12 @@
 import styles from './css/Navbar.module.css';
 import Link from 'next/link';
 import Script from 'next/script';
+import { useSession, signIn, signOut } from "next-auth/react";
+
 
 const Navbar = () => {
+	const { data: session } = useSession()
+
 	return(
 		<div className={styles.container}>
 			<div className={styles.brand}>
@@ -10,10 +14,19 @@ const Navbar = () => {
 				<a>Plant.co</a>
 			</div>
 			<div className={styles.navlink}> 
-				<Link href='/'>Home</Link>			
-				<Link href='/AboutUs'>About</Link>			
-				<Link href='/Service'>Services</Link>			
-				<Link href='/Contacts'>Contacts</Link>	
+				{session && session.user ? (
+					<>
+						<button onClick={() => signOut()}>Sign out</button>
+				  	</>
+				) : (
+					<>
+						<Link href='/'>Home</Link>			
+						<Link href='/AboutUs'>About</Link>			
+						<Link href='/Service'>Services</Link>			
+						<Link href='/Contacts'>Contacts</Link>
+						<button onClick={() => signIn()}>Sign in</button>
+					</>
+				)}
 			</div>
 			<div className={styles.ctalink}>
 				<img src="/images/hamburger.png" />

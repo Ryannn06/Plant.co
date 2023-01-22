@@ -4,7 +4,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* background: hsla(187, 32%, 55%, 1); */
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); 
 }
 
 .brand {
@@ -23,14 +24,14 @@
 
 .navlink {
 	display: flex;
-	gap: 60px;
+	align-items: center;
+	gap: 30px;
 	color: black ;
 }
 
 .navlink > a:hover {
-	color: #FFFFFF;
-	background: #ED820E;
-	padding: 10px;
+	color: #ED820E;
+	text-decoration: underline;
 }
 
 .navlink > a {
@@ -39,6 +40,18 @@
 	cursor: pointer;
 	font-weight: 650px;
 	transition: .5s;
+}
+
+.navlink > button {
+	font-size: 18px;
+	font-family: Roboto;
+	cursor: pointer;
+	font-weight: 650px;
+	transition: .5s;
+	border: none;
+	color: #FFFFFF;
+	background: #164A41;;
+	padding: 14px;
 }
 
 .ctalink {
