@@ -74,8 +74,13 @@ const ForgotPasswordForm = () => {
 			return
 		}
 
+		if ( newpassword.trim().length < 7 ) {
+		    alert("Password should be of atleast 7 characters.");
+		    return
+		}
+
 		if (confirmpassword == null || confirmpassword == ''){
-			alert('Please confirm youre new password.')
+			alert('Please confirm your new password.')
 			return
 		}
 
