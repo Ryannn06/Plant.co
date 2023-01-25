@@ -23,6 +23,11 @@
 	padding: 1rem;
 }
 
+.forgotlink {
+	font-family: Roboto;
+	font-size: 18px;
+}
+
 .credentials > h1 {
 	font-size: 35px ;
 	margin: 0 0 0 0;

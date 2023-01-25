@@ -1,0 +1,27 @@
+.container {
+	margin: 0;
+	padding: 0rem 10rem 5rem 10rem;	
+}
+
+.displaycards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card {
+	width: 30%;
+	height: 60vh;
+	background:#F5F5F5;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	border: 1px;
+	padding: 1.5rem;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	font-family: Roboto;
+	font-size: 16px;
+}

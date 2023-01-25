@@ -52,6 +52,13 @@
 	color: #FFFFFF;
 	background: #164A41;;
 	padding: 14px;
+	border-radius: 25px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); 
+	
+}
+
+.navlink > button:hover {
+	background-color: #F78522;
 }
 
 .ctalink {
@@ -106,6 +113,53 @@
   font-size: 60px;
   color: #edf0f1;
 }
+
+.dropbtn {
+  background-color: #164A41;
+  color: #FFFFFF;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #F5F5F5;
+  min-width: 160px;
+  z-index: 1;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.dropdown_content > a {
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_content > a:hover {
+	background-color: #F78522;
+	color: #FFFFFF;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #F78522;
+}
+
 @media (max-width: 1150px) {
 /*	.navlink {
 		display: none

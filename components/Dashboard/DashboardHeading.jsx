@@ -10,8 +10,8 @@ const DashboardHeading = () => {
 		<div className={styles.container}>	
 			<div className={styles.card}>
 				<div>
-					<h1>Nice to meet you, 
-						<span className={styles.user}> {session.user.email} </span>
+					<h1>Nice to meet you
+						<span className={styles.user}></span>
 						!
 					</h1>
 					<p>Showing a gallery for detected motions</p>

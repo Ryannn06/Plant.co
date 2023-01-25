@@ -15,8 +15,9 @@ const Navbar = () => {
 			</div>
 			<div className={styles.navlink}> 
 				{session && session.user ? (
-					<>
+					<>	
 						<button onClick={() => signOut()}>Sign out</button>
+						
 				  	</>
 				) : (
 					<>

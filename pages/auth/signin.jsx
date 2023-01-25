@@ -9,7 +9,7 @@ import Navbar from '/components/Navbar';
 import Footer from '/components/Footer';
 
 
-async function validateUser(username, password, router) {
+async function validateUser(username, password, router, formRef) {
 	const response = await signIn('credentials', {
 	    redirect: false,
 	    username: username,
@@ -17,27 +17,30 @@ async function validateUser(username, password, router) {
 	}).then(response => {
 		console.log(response)
 		if (!response.ok) {
+			formRef.current.reset();
 			alert(response.error)
 		} else {
-			router.push('/')
+			formRef.current.reset();
+			router.push('/Dashboard')
 		}
 	});
 }
 
 async function googleHandler(){
 	signIn('google', {
-		callbackUrl: "http://localhost:3000"
+		callbackUrl: "http://localhost:3000/Dashboard"
 	})
 }
 
 async function githubHandler(){
 	signIn('github', {
-		callbackUrl: "http://localhost:3000"
+		callbackUrl: "http://localhost:3000/Dashboard"
 	})
 }
 
 export default function SignIn({ providers, csrfToken }) {
 	const router = useRouter();
+	const formRef = useRef();
 	const usernameInputRef = useRef();
 	const passwordInputRef = useRef();
 
@@ -61,7 +64,7 @@ export default function SignIn({ providers, csrfToken }) {
 	    }
 
 	    try {
-	        const result = await validateUser(enteredUsername, enteredPassword, router);
+	        const result = await validateUser(enteredUsername, enteredPassword, router, formRef);
 	        console.log(result);
 	    } catch (error) {
 	    	alert(error)
@@ -80,9 +83,10 @@ export default function SignIn({ providers, csrfToken }) {
 						<div className={styles.credentials}>
 							<h1>Login</h1>
 							<p>Don't have an account? Register <Link href='/Register' className={styles.links}>here.</Link></p>
-							<form className={styles.form} onSubmit={submitHandler}>
+							<form className={styles.form} onSubmit={submitHandler} ref={formRef}>
 								<input type="text" id="password" name="username" placeholder="username" required ref={usernameInputRef}></input>
 								<input type="password" id="password" name="password" placeholder="password" required ref={passwordInputRef}></input>
+								<Link href="/ForgotPassword" className="styles.forgotlink">Forgot password?</Link>
 								<div className={styles.submit}>
 									<button type='submit'>Login</button>	
 								</div>	
@@ -120,7 +124,7 @@ export async function getServerSideProps(context) {
 
   	if (session) {
     	return {
-      		redirect: { destination: "/Dashboard" },
+      		redirect: { destination: "/" },
     	};
   	}
 	return {

@@ -31,6 +31,7 @@ const RegisterForm = () => {
 	const usernameInputRef = useRef();
 	const emailInputRef = useRef();
 	const passwordInputRef = useRef();
+	const confirmpasswordInputRef = useRef();
 
 	const router = useRouter();
 
@@ -43,6 +44,7 @@ const RegisterForm = () => {
 	    const enteredUsername = usernameInputRef.current.value;
 	    const enteredEmail = emailInputRef.current.value;
 	    const enteredPassword = passwordInputRef.current.value;
+	    const confirmPassword = confirmpasswordInputRef.current.value;
 
 	    //validate the form
 	    if ( enteredUsername == null || enteredUsername == '' ) {
@@ -58,11 +60,21 @@ const RegisterForm = () => {
 	    if ( enteredPassword == null || enteredPassword == '' ) {
 	        alert("Please enter your password.");
 	        return
-	    } else {
-	    	if ( enteredPassword.trim().length < 7 ) {
-	    	    alert("Password should be of atleast 7 characters.");
-	    	    return
-	    	}
+	    }
+	    
+	    if ( enteredPassword.trim().length < 7 ) {
+	        alert("Password should be of atleast 7 characters.");
+	        return
+	    }
+
+	    if ( confirmPassword == null || confirmPassword == '' ) {
+	        alert("Please confirm your password password.");
+	        return
+	    }
+
+	    if ( confirmPassword != enteredPassword ) {
+	        alert("Passwords don't match");
+	        return
 	    }
 
 
@@ -85,6 +97,7 @@ const RegisterForm = () => {
 						<input type="text" name="username" placeholder="username" required ref={usernameInputRef} ></input>
 						<input type="email" name="email" placeholder="email" required ref={emailInputRef}  ></input>
 						<input type="password" name="password" placeholder="password" required ref={passwordInputRef} ></input>
+						<input type="password" name="confirmpassword" placeholder="confirm password" required ref={confirmpasswordInputRef} ></input>
 						<div className={styles.submit}>
 							<button type='submit'>Create account</button>	
 						</div>	
