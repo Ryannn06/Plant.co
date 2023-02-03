@@ -1,11 +1,13 @@
 import {useState, useRef} from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { signIn } from "next-auth/react";
+import { toast } from "react-toastify";
 
 import styles from '/components/css/Auth/Register.module.css';
 
-async function createUser(username, email, password, router) {
+async function createUser(username, email, password, router, formRef) {
  	const response = await fetch('http://localhost:3001/register', {
     	method: 'POST',
     	body: JSON.stringify({ username, email, password }),
@@ -17,10 +19,10 @@ async function createUser(username, email, password, router) {
  	const data = await response.json();
 
   	if (!response.ok) {
-    	alert(data.message);
+    	toast(data.message, { hideProgressBar: true, autoClose: 9000, type: 'error', position:'top-center' });
   	} else {
-  		alert(data.message);
-  		router.push('/api/auth/signin')
+  		toast(data.message, { hideProgressBar: true, autoClose: 9000, type: 'success', position:'top-center' });
+  		formRef.current.reset();
   	}
   	return data;
 }
@@ -28,6 +30,8 @@ async function createUser(username, email, password, router) {
 const RegisterForm = () => {
 
 	//get the data from the form
+	const formRef = useRef();
+
 	const usernameInputRef = useRef();
 	const emailInputRef = useRef();
 	const passwordInputRef = useRef();
@@ -48,39 +52,39 @@ const RegisterForm = () => {
 
 	    //validate the form
 	    if ( enteredUsername == null || enteredUsername == '' ) {
-	        alert("Please enter your username.");
+	        toast("Please enter your username.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 
 	    if ( enteredEmail == null || enteredEmail == '' ) {
-	        alert("Please enter your email.");
+	    	toast("Please enter your email.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 
 	    if ( enteredPassword == null || enteredPassword == '' ) {
-	        alert("Please enter your password.");
+	        toast("Please enter your password.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 	    
 	    if ( enteredPassword.trim().length < 7 ) {
-	        alert("Password should be of atleast 7 characters.");
+	        toast("Password should be of at least 7 characters", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 
 	    if ( confirmPassword == null || confirmPassword == '' ) {
-	        alert("Please confirm your password password.");
+	        toast("Please confirm your password", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 
 	    if ( confirmPassword != enteredPassword ) {
-	        alert("Passwords don't match");
+	        toast("Passwords don't match", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 
 
 	    //if the form passes, try to create user
 	    try {
-	        const result = await createUser(enteredUsername, enteredEmail, enteredPassword, router);
+	        const result = await createUser(enteredUsername, enteredEmail, enteredPassword, router, formRef);
 	        console.log(result);
 	    } catch (error) {
 	    	alert(error)
@@ -93,19 +97,19 @@ const RegisterForm = () => {
 				<div className={styles.credentials}>
 					<h1>Signup</h1>
 					<p>Already have an account? Login <Link href='/api/auth/signin' className={styles.links}>here.</Link></p>
-					<form className={styles.form} onSubmit={submitHandler}>
+					<form className={styles.form} onSubmit={submitHandler} ref={formRef}>
 						<input type="text" name="username" placeholder="username" required ref={usernameInputRef} ></input>
 						<input type="email" name="email" placeholder="email" required ref={emailInputRef}  ></input>
 						<input type="password" name="password" placeholder="password" required ref={passwordInputRef} ></input>
 						<input type="password" name="confirmpassword" placeholder="confirm password" required ref={confirmpasswordInputRef} ></input>
 						<div className={styles.submit}>
-							<button type='submit'>Create account</button>	
+							<button type='submit'>Create account &raquo;</button>	
 						</div>	
 					</form>
 				</div>
 			</div>
-			<div>
-				
+			<div className={styles.imagecontainer}>
+				<Image src='/images/outerspace.svg' alt='outer space' layout='fill' objectFit='contain' />
 			</div>
 		</div>
 	);

@@ -10,7 +10,7 @@ const FirstSection = () => {
 					<h1>We've got your back</h1>
 					<p>Our great consultant and specialist would be glad to answer your questions and 
 					if you need further assistance, we are here to guide you.</p>
-					<button><Link href="/Contacts">Contact Us &rsquo;</Link></button>
+					<button><Link href="/Contacts">Contact Us &raquo;</Link></button>
 				</div>				
 			</div>
 		</div>

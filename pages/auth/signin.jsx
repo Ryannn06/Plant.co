@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import {useState, useRef} from "react";
 import { useRouter } from "next/router";
 import { getProviders, getSession, signIn, getCsrfToken } from "next-auth/react";
+import { toast } from "react-toastify";
 
 import styles from '/components/css/Auth/Signin.module.css';
 import Navbar from '/components/Navbar';
@@ -18,7 +20,7 @@ async function validateUser(username, password, router, formRef) {
 		console.log(response)
 		if (!response.ok) {
 			formRef.current.reset();
-			alert(response.error)
+			toast(response.error, { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 		} else {
 			formRef.current.reset();
 			router.push('/Dashboard')
@@ -54,12 +56,12 @@ export default function SignIn({ providers, csrfToken }) {
 
 	    //validate the form
 	    if ( enteredUsername == null || enteredUsername == '' ) {
-	        alert("Please enter your username.");
+	        toast("Please enter your username.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 
 	    if ( enteredPassword == null || enteredPassword == '' ) {
-	        alert("Please enter your password.");
+	        toast("Please enter your password.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 	        return
 	    }
 
@@ -67,7 +69,7 @@ export default function SignIn({ providers, csrfToken }) {
 	        const result = await validateUser(enteredUsername, enteredPassword, router, formRef);
 	        console.log(result);
 	    } catch (error) {
-	    	alert(error)
+	    	toast(error, { hideProgressBar: true, autoClose: 9000, type: 'error', position:'top-center' });
 	    }
 	}
 
@@ -88,7 +90,7 @@ export default function SignIn({ providers, csrfToken }) {
 								<input type="password" id="password" name="password" placeholder="password" required ref={passwordInputRef}></input>
 								<Link href="/ForgotPassword" className="styles.forgotlink">Forgot password?</Link>
 								<div className={styles.submit}>
-									<button type='submit'>Login</button>	
+									<button type='submit'>Login &raquo;</button>	
 								</div>	
 							</form>
 						</div>
@@ -110,7 +112,9 @@ export default function SignIn({ providers, csrfToken }) {
 							</div>
 						</div>
 					</div>
-					<div></div>
+					<div className={styles.imagecontainer}>
+						<Image src='/images/wishes.svg' alt='outer space' layout='fill' objectFit='contain' />
+					</div>
 				</div>
 				<Footer />
 			</div>

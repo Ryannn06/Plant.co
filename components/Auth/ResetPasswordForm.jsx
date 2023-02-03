@@ -1,7 +1,9 @@
 import {useState, useRef, Fragment, useEffect} from "react";
 import Link from 'next/link';
+import Image from 'next/Image';
 import { useRouter } from 'next/router';
 import { signIn } from "next-auth/react";
+import { toast } from "react-toastify";
 
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
@@ -21,10 +23,10 @@ async function resetPassword(newpassword, user, token, router, formRef) {
 	const data = await response.json();
   	if (!response.ok) {
   		formRef.current.reset();
-    	alert(data.message);
+    	toast(data.message, { hideProgressBar: true, autoClose: 9000, type: 'error', position:'top-center' });
   	} else {
   		formRef.current.reset();
-  		alert(data.message);
+  		toast(data.message, { hideProgressBar: true, autoClose: 9000, type: 'success', position:'top-center' });
   		router.push('/');
   	}
   	return data;
@@ -70,30 +72,29 @@ const ForgotPasswordForm = () => {
 		const confirmpassword = confirmpasswordInputRef.current.value;
 
 		if (newpassword == null || newpassword == ''){
-			alert('Please enter your new password.')
+			toast("Please enter your new password.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 			return
 		}
 
 		if ( newpassword.trim().length < 7 ) {
-		    alert("Password should be of atleast 7 characters.");
+		    toast("Password should be of at least 7 characters", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 		    return
 		}
 
 		if (confirmpassword == null || confirmpassword == ''){
-			alert('Please confirm your new password.')
+			toast("Please confirm your new password.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 			return
 		}
 
 		if (newpassword != confirmpassword){
-			alert("Passwords don't match!")
+			toast("Passwords don't match!", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 			return
 		}
 
 		try {
 			const result = await resetPassword(newpassword, user, token, router, formRef);
-			console.log(result);
 		} catch (error) {
-			alert(error);
+			toast(error, { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 		}
 	}
 
@@ -114,7 +115,8 @@ const ForgotPasswordForm = () => {
 							</form>
 						</div>
 					</div>
-					<div>
+					<div className={styles.imagecontainer}>
+						<Image src='/images/surveillance.svg' alt='surveillance' layout='fill' objectFit='contain' />
 					</div>
 				</div>
 			): (

@@ -2,6 +2,7 @@ import {useState, useRef} from "react";
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { signIn } from "next-auth/react";
+import { toast } from "react-toastify";
 
 import styles from '/components/css/Auth/Register.module.css';
 
@@ -18,10 +19,10 @@ async function findEmail(email, router, formRef) {
 	const data = await response.json();
   	if (!response.ok) {
   		formRef.current.reset();
-    	alert(data.message);
+    	toast(data.message, { hideProgressBar: true, autoClose: 9000, type: 'error', position:'top-center' });
   	} else {
   		formRef.current.reset();
-  		alert(data.message);
+  		toast(data.message, { hideProgressBar: true, autoClose: 9000, type: 'success', position:'top-center' });
   	}
   	return data;
 }
@@ -39,7 +40,7 @@ const ResetPasswordForm = () => {
 		const enteredEmail = emailInputRef.current.value;
 
 		if (enteredEmail == null || enteredEmail == ''){
-			alert('Please enter your email address.')
+			toast("Please enter your email address.", { hideProgressBar: true, autoClose: 5000, type: 'error', position:'top-center' });
 			return
 		}
 

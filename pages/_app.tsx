@@ -2,8 +2,9 @@ import '../styles/globals.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from "next/router";
 import { AppProps } from 'next/app';
-import { SessionProvider } from "next-auth/react"
-
+import { SessionProvider } from "next-auth/react";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps }: AppProps) {
     const router = useRouter();
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         >
           <SessionProvider session={pageProps.session}>
             <Component {...pageProps} />
+            <ToastContainer />
           </SessionProvider>
         </motion.div>
       </AnimatePresence>  
