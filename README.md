@@ -11,6 +11,10 @@ Create a Next.js app using create-next-app, which sets up everything automatical
 3. Edit app/layout.tsx (or pages/index.tsx) file and save it to see the updated result in your browser.
 
 ## Install Required Libraries
-### Framer Motion, to provide our animation features
+### Framer Motion, to provide our animation features.
 To install, run:
 > npm install framer-motion
+
+### NextAuth.js, a complete open-source authentication solution for Next.js applications.
+To install, run:
+> npm install nextauth
