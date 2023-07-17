@@ -1,11 +1,11 @@
 # Plant.co
 A static website inspired from plant decorations and services, developed using the Next.js framework.
 
-## 1. Automatic Installation
+## Automatic Installation
 Create a Next.js app using create-next-app, which sets up everything automatically. To create a project, run:
 > npx create-next-app@latest
 
-## 2. Install Required Libraries
+## Install Required Libraries
 ### Framer Motion, to provide our animation features.
 To install, run:
 > npm install framer-motion
@@ -14,15 +14,15 @@ To install, run:
 To install, run:
 > npm install nextauth
 
-## 2. Run the Development Server
+## Run the Development Server
 1. Run npm run dev to start the development server.
 2. Visit http://localhost:3000 to view your application.
 3. Edit app/layout.tsx (or pages/index.tsx) file and save it to see the updated result in your browser.
 
-## 3. Launch XAMPP Control Panel. Start Apache and MySQL Server.
+## Launch XAMPP Control Panel. Start Apache and MySQL Server.
 
-## 4. Rnn the Client Server
-On another new command prompt, run npm run server to start the api server.
+## Run the Client Server
+On another command prompt, run npm run server to start the api server.
 
 ###Create Data Table
 a. Visit http://localhost:3001/user_registration to create table for user credentials
