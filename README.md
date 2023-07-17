@@ -24,6 +24,6 @@ To install, run:
 ## Run the Client Server
 On another command prompt, run npm run server to start the api server.
 
-###Create Data Table
+### Create Data Table
 a. Visit http://localhost:3001/user_registration to create table for user credentials
 b. Visit http://localhost:3001/motion_image to create table for detected motions of our separate python motion-detector application.
