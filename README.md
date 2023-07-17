@@ -19,10 +19,10 @@ To install, run:
 2. Visit http://localhost:3000 to view your application.
 3. Edit app/layout.tsx (or pages/index.tsx) file and save it to see the updated result in your browser.
 
-## Launch XAMPP Control Panel. Start Apache and MySQL Server.
-
 ## Run the Client Server
-On another command prompt, run npm run server to start the api server.
+Launch XAMPP Control Panel. Start Apache and MySQL Server.
+Then on another command prompt, run: 
+> npm run server
 
 ### Create Data Table
 a. Visit http://localhost:3001/user_registration to create table for user credentials
