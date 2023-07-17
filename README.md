@@ -25,5 +25,5 @@ Then on another command prompt, run:
 > npm run server
 
 ### Create Data Table
-a. Visit http://localhost:3001/user_registration to create table for user credentials
-b. Visit http://localhost:3001/motion_image to create table for detected motions of our separate python motion-detector application.
+1. Visit http://localhost:3001/user_registration to create table for user credentials
+2. Visit http://localhost:3001/motion_image to create table for detected motions of our separate python motion-detector application.
