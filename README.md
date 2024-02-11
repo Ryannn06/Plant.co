@@ -2,13 +2,20 @@
 A simple Plant Services Co. website built in Nextjs and MySQL. 
 Visit the website [here](https://plantco.netlify.app).
 
+
 ## Table of Contents
+- [General Info](#general-info)
 - [Technologies](#technologies)
 - [Installation and Setup](#installation-and-setup)
 - [Key Features](#key-features)
 - [Inspiration](#inspiration)
 
-##Technologies
+
+## General Info
+It is an academic project that developed website application about Plant Planning and Services.This application is developed with HTML, CSS, Next.js, XAMPP, Apache Server, and MySQL. For website hosting Netlify is utilized to deploy the application.
+
+
+## Technologies
 Below are some of the notable dependencies used in this project
 - Axios version: "^1.2.2"
 - Brypt version: "^5.1.0"
@@ -22,6 +29,7 @@ Below are some of the notable dependencies used in this project
 - Next-auth version: "^4.18.8"
 - Nodemon version: "^2.0.20"
 - React-toastify version: "^9.1.1",
+
 
 ## Installation and Setup
 Create a Next.js app using create-next-app, which sets up everything automatically. To create a project, run:
@@ -45,5 +53,9 @@ Then on another command prompt, run:
 1. Visit http://localhost:3001/user_registration to create table for user credentials
 2. Visit http://localhost:3001/motion_image to create table for detected motions of our separate python motion-detector application.
 
-##Key Features
+
+## Key Features
+- The system utilizes NextAuth and Rest APIs to allow user registration, authentication, and authorization.
+- For custom registration, the system uses custom backend/external apis.
+- Offers Reset Password feature for users who apparently have forgotten their password with the use of external APIs
 - External Python Motion Detector Program created in Node.js and Python is integrated into this web application.
