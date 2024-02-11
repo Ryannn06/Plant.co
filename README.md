@@ -1,8 +1,5 @@
 # Plant.co
-A Plant Services Co. website built in Nextjs and MySQL. Visit the [website link](https://plantco.netlify.app)
-
-##Website Link
-https://plantco.netlify.app 
+A Plant Services Co. website built in Nextjs and MySQL. Visit the website [here](https://plantco.netlify.app).
 
 ## Automatic Installation
 Create a Next.js app using create-next-app, which sets up everything automatically. To create a project, run:
