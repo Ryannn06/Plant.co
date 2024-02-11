@@ -1,7 +1,7 @@
 # Plant.co
 A Plant Services Co. website built in Nextjs and MySQL. Visit the website [here](https://plantco.netlify.app).
 
-#Get Started
+# Get Started
 In order to use the application, the setup directions are as follows:
 
 ## Automatic Installation
