@@ -43,7 +43,6 @@ To install a [dependency](#technologies), run:
 ### 3. Run the Development Server
 1. Run npm run dev to start the development server.
 2. Visit http://localhost:3000 to view your application.
-3. Edit app/layout.tsx (or pages/index.tsx) file and save it to see the updated result in your browser.
 
 ### 4. Run the Client Server
 Launch XAMPP Control Panel. Start Apache and MySQL Server.
@@ -51,6 +50,7 @@ Then on another command prompt, run:
 > npm run server
 
 ### 5. Create Data Table
+To create MySQL tables, visit the links as follows:
 1. Visit http://localhost:3001/user_registration to create table for user credentials
 2. Visit http://localhost:3001/motion_image to create table for detected motions of our separate python motion-detector application.
 <br/><br/>
