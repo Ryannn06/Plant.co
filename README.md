@@ -59,3 +59,7 @@ Then on another command prompt, run:
 - For custom registration, the system uses custom backend/external apis.
 - Offers Reset Password feature for users who apparently have forgotten their password with the use of external APIs
 - External Python Motion Detector Program created in Node.js and Python is integrated into this web application.
+
+
+## Inspiration
+The creation of this website is inspired from the concept of love and interest towards nature.
