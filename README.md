@@ -1,7 +1,7 @@
 # Plant.co
-A simple Plant Services Co. website built in Nextjs and MySQL. 
+A simple Plant Services Co. website built in Nextjs and MySQL. <br/>
 Visit the website [here](https://plantco.netlify.app).
-
+<br/><br/>
 
 ## Table of Contents
 - [General Info](#general-info)
@@ -9,11 +9,11 @@ Visit the website [here](https://plantco.netlify.app).
 - [Installation and Setup](#installation-and-setup)
 - [Key Features](#key-features)
 - [Inspiration](#inspiration)
-
+<br/><br/>
 
 ## General Info
 It is an academic project that developed website application about Plant Planning and Services.This application is developed with HTML, CSS, Next.js, XAMPP, Apache Server, and MySQL. For website hosting Netlify is utilized to deploy the application.
-
+<br/><br/>
 
 ## Technologies
 Below are some of the notable dependencies used in this project
@@ -29,37 +29,37 @@ Below are some of the notable dependencies used in this project
 - Next-auth version: "^4.18.8"
 - Nodemon version: "^2.0.20"
 - React-toastify version: "^9.1.1",
-
+<br/><br/>
 
 ## Installation and Setup
-Create a Next.js app using create-next-app, which sets up everything automatically. To create a project, run:
+### 1. Create a Next.js app using create-next-app, which sets up everything automatically. To create a project, run:
 > npx create-next-app@latest
 
-### 1. Install Required Libraries
+### 2. Install Required Libraries
 To install a [dependency](#technologies), run:
 > npm install package-name
 
-### 2. Run the Development Server
+### 3. Run the Development Server
 1. Run npm run dev to start the development server.
 2. Visit http://localhost:3000 to view your application.
 3. Edit app/layout.tsx (or pages/index.tsx) file and save it to see the updated result in your browser.
 
-### 3. Run the Client Server
+### 4. Run the Client Server
 Launch XAMPP Control Panel. Start Apache and MySQL Server.
 Then on another command prompt, run: 
 > npm run server
 
-### 4. Create Data Table
+### 5. Create Data Table
 1. Visit http://localhost:3001/user_registration to create table for user credentials
 2. Visit http://localhost:3001/motion_image to create table for detected motions of our separate python motion-detector application.
-
+<br/><br/>
 
 ## Key Features
 - The system utilizes NextAuth and Rest APIs to allow user registration, authentication, and authorization.
 - For custom registration, the system uses custom backend/external apis.
 - Offers Reset Password feature for users who apparently have forgotten their password with the use of external APIs
 - External Python Motion Detector Program created in Node.js and Python is integrated into this web application.
-
+<br/><br/>
 
 ## Inspiration
 The creation of this website is inspired from the concept of love and interest towards nature.
