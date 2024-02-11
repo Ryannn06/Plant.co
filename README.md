@@ -32,8 +32,9 @@ Below are some of the notable dependencies used in this project
 <br/><br/>
 
 ## Installation and Setup
-### 1. Create a Next.js app using create-next-app, which sets up everything automatically. To create a project, run:
-> npx create-next-app@latest
+### 1. Install the App module
+To install module, run:
+> npm install
 
 ### 2. Install Required Libraries
 To install a [dependency](#technologies), run:
