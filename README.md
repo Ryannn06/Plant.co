@@ -32,7 +32,7 @@ Below are some of the notable dependencies used in this project
 <br/><br/>
 
 ## Installation and Setup
-### 1. Install the App module
+### 1. Download the zip file and install the module
 To install module, run:
 > npm install
 
